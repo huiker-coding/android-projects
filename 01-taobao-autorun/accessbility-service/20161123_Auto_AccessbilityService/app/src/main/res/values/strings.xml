@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">开启内置服务</string>
+    <string name="main_name">抓包后置服务</string>
+    <string name="accessibility_description">启动抓包服务</string>
+    <string name="service_name">自动抓包</string>
+    <string name="open_service_title">提示</string>
+    <string name="open_service_button">打开辅助服务</string>
+    <string name="open_notify_service">打开通知栏服务</string>
+    <string name="check_update">检查更新</string>
+    <string name="share">分享</string>
+    <string name="tips">找到[自动抓包]，然后开启服务即可</string>
+
+
+</resources>
