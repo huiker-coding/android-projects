@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yunda.input"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <service
+            android:name="com.yunda.input.ImeService"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_INPUT_METHOD" >
+            <intent-filter>
+                <action android:name="android.view.InputMethod" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.view.im"
+                android:resource="@xml/input_method" />
+        </service>
+
+        <receiver
+            android:name="com.wx.liuliang.WxSetClipboardReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.wx.liuliang.setclipboard" />
+                <action android:name="com.wx.liuliang.getclipboard" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.wx.liuliang.WxSetClipboardService"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+
+</manifest>

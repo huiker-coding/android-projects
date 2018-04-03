@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">引流宝</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="please_input_phone_num">请输入手机号码</string>
+    <string name="please_input_password">请输入密码</string>
+    
+    <string name="please_input_zfb_account">请输入支付宝账号</string>
+    <string name="please_input_password_again">请再次输入密码</string>
+    <string name="please_input_verify_code">请输入6位验证码</string>
+
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 营收历史界面 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="#A4D3EE"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_sevenday_income"
+                android:button="@null"
+                android:layout_width="100dp"
+               android:layout_height="match_parent"
+                android:background="@drawable/bg_tab_press_selector_1"
+                android:checked="true"
+                android:text="最近7天收益"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/white" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/main_font_color" />
+
+            <RadioButton
+                android:id="@+id/rb_history_income"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_tab_press_selector_1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="收益历史"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/main_font_color" />
+
+    <LinearLayout
+        android:id="@+id/ll_senvenday_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <com.yinliubao.client.views.HistogramView
+            android:id="@+id/green"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/main_font_color" />
+    </LinearLayout>
+    
+      <LinearLayout
+        android:id="@+id/ll_income_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:visibility="gone"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="收益历史"
+             />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/main_font_color" />
+    </LinearLayout>
+ </LinearLayout>
+</LinearLayout>

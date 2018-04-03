@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 主页面(Fragment Container界面) -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.ylb.client.MainActivity" >
+
+    <include
+        android:id="@+id/ll_includer"
+        layout="@layout/include_header" />
+
+    <LinearLayout 
+        android:id="@+id/ll_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        >
+    
+         <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/main_font_color" />
+        
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A4D3EE"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_task_hall"
+            style="@style/radiobutton_style"
+            android:drawableTop="@drawable/tab_selector_1"
+            android:text="任务大厅"
+            android:checked="true"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/main_font_color" />
+
+        <RadioButton
+            android:id="@+id/rb_income_history"
+            style="@style/radiobutton_style"
+            android:drawableTop="@drawable/tab_selector_2"
+            android:text="收益历史" 
+            android:textColor="@color/black"
+            />
+
+         <View
+            android:layout_width="0.5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/main_font_color" />
+        
+        
+        <RadioButton
+            android:id="@+id/rb_setting"
+            style="@style/radiobutton_style"
+            android:drawableTop="@drawable/tab_selector_3"
+            android:text="设置中心" 
+            android:textColor="@color/black"
+            />
+    </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D6D6D6"
+        android:layout_above="@id/ll_tab_bar"
+        android:layout_below="@id/ll_includer"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</RelativeLayout>
